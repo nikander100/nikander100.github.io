@@ -1,0 +1,130 @@
+
+nav {
+	width: 100%;
+	background-color: red;
+	padding: 5px;
+	height: 45px;
+}
+nav a {
+	padding: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color:  black;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+nav a:hover {
+	border-radius: 25px;
+	font-size: 25px;
+	background-color:black;
+	color: red;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+nav li {
+	float: left;
+	border-right:solid 1px #fff;
+	border-left:solid 1px #fff;
+	border-collapse:collapse;
+
+}
+#introduction {
+	background-color: black;
+	border-bottom: 2px solid blue;
+	height: 200px;
+}
+@media (min-width: 600px) {
+	#introduction p {
+		float: right;
+		color: whitesmoke;
+		font-size: 19px;
+		font-style: italic, bold;
+		margin-right: 15px;
+		margin-top: 50px;
+	}
+	#introduction img {
+		width: 150px;
+		margin-top: 25px;
+		margin-left: 25px;
+		border-radius: 50%;
+	}
+}
+@media (max-width: 599px) {
+	#introduction p {
+		display:none
+	}
+	#introduction img {
+		width: 200px;
+		display: block;
+		margin: auto;
+
+		border-radius: 270px;
+	}
+
+}
+.container1 > h1:first-child {
+	font-size: 48px;
+	text-align: center;
+	margin: 25px;
+}
+.external a {
+	margin-top: 10%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	margin-right: auto;
+	margin-left: auto;
+  }
+.external a:hover, .card-body a:hover {
+	background-color: rgb(255, 0, 0);
+	color: black;
+  }
+a, a:hover {
+	color: red;
+
+}
+footer {
+	margin-top: 750px;
+	text-align: right;
+	font-size: 16px;
+	font-weight: bold;
+}
+.alert {
+	text-align: center;
+	font-weight: bolder;
+}
+.card {
+	margin: 5px;
+	margin-top: 10px;
+}
+@media (max-width: 599px) {
+	.card {
+	  margin-top: 5px;
+	  width: 100%;
+	}
+  }
+ @media (min-width: 600px) {
+	.card {
+	  width: 18rem;
+	}
+}
+.demon {
+	-webkit-box-shadow: 5px 5px 15px 5px #000000; 
+	box-shadow: 5px 5px 15px 5px #000000;
+}
+#contact-info {
+	th {
+		font-size: 1.8rem;
+		text-align: center;
+		border: 1px solid black;
+	}
+	td {
+		font-size: 1.2rem;
+		border: 1px solid black;
+		padding: 10px;
+	}
+}
