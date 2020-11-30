@@ -46,24 +46,23 @@ nav li a:hover:not(.active) {
 }
 
 #introduction {
-  background-color: rgb(255, 0, 200);
-  border-bottom: 2px solid blue;
-  height: 200px;
+  background-color: #a3a3a3;
+  height: 50px;
+  text-align: right;
 }
 
 @media (min-width: 600px) {
-	#introduction p {
-		float: right;
-		color: whitesmoke;
-		font-size: 19px;
-		font-style: italic, bold;
-		margin-right: 15px;
-		margin-top: 50px;
+	#introduction h1 {
+		color: #000000;
+    font-size: 32px;
+    overflow: hidden;
+    display: block;
 	}
 }
 @media (max-width: 599px) {
-  #introduction p {
+  #introduction h1 {
     display: none;
+
   }
 }
 .container1 > h1:first-child {
