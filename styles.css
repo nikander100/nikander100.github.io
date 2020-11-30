@@ -1,10 +1,25 @@
-body {
-	margin: 0;
+html, body {
+  height: 100%;
   }
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .page-container {
+
+} */
+
+.content-wrapper {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+}
 
 nav {
 	list-style-type: none;
-	width: 25%;
+  width: 12.5%;
 	background-color:#a3a3a3;
 	padding: 0px;
 	height: 100%;
@@ -12,14 +27,16 @@ nav {
 	overflow: auto;
 	position: fixed;
 }
+
 nav img {
 	display: block;
 	margin: auto;
 	width: 200px;
 	margin-bottom: 32px;
-	margin-top: 32px;
+	margin-top: 50px;
 	border-radius: 50%;
 }
+
 nav ul {
 	list-style-type: none;
 	margin: 0;
@@ -45,22 +62,31 @@ nav li a:hover:not(.active) {
 	color: #ffffff;
 }
 
-#introduction {
+.page-header {
   background-color: #a3a3a3;
   height: 50px;
-  text-align: right;
+  margin-left: 12.5%;
+  width: auto;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.content {
+  width: auto;
+  margin-left: 12.5%;
+  padding: 20px;
 }
 
 @media (min-width: 600px) {
-	#introduction h1 {
+	.header h1 {
 		color: #000000;
-    font-size: 32px;
-    overflow: hidden;
-    display: block;
 	}
 }
 @media (max-width: 599px) {
-  #introduction h1 {
+  .header h1 {
     display: none;
 
   }
@@ -89,10 +115,12 @@ a, a:hover {
 }
 
 footer {
-  margin-bottom: 0px;
   text-align: right;
   font-size: 16px;
   font-weight: bold;
+  flex: none;
+  background-color: aqua;
+  padding: 20px;
 }
 
 .alert {
@@ -131,5 +159,7 @@ footer {
   border: 1px solid black;
   padding: 10px;
 }
+
+
 
 /*# sourceMappingURL=styles.css.map */
