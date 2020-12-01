@@ -7,51 +7,60 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
-		<nav>
-			<div id="Me">
-				<a href="https://www.linkedin.com/in/nikander100/"><img src="me.jpg"></a>
+		<div id="page-container">
+			<nav>
+				<ul>
+					<li><img src="me.jpg"></li>
+					<li><a href="index.html">Homepage</a></li>
+					<li><a href="socials.html">socials</a></li>
+					<li><a class="active" href="portfolio.html">Portfolio</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		<div id="content-wrapper">
+			<div class="page-header">
+				<div>
+					<h1>
+						Nikander "nikander100" van der Schee
+					</h1>	
+				</div>
+				<div>
+					<h1>
+						Student @ <a href="https://www.codam.nl/">Codam</a> Coding College
+					</h1>
+				</div>
 			</div>
-			<ul>
-				<li><a href="index.html">Homepage</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a class="active" href="portfolio.html">Portfolio</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</nav>
-		<div id="introduction">
-			<p>
-				Nikander van der schee</br>
-				12-10-2000</br>
-				Student @ <a href="https://www.codam.nl/">Codam</a> Coding College</br>
-			</p>
+			<main class="content">
+				<div id="projects" class="container">
+					<div class="row justify-content-center">
+						<div class="card text-center demon">
+							<div class="card-body">
+							  <h5 class="card-title">CodeWorkHackers</h5>
+							  <p class="card-text">A small group of a few others and myself, currently working on a private and public tool/toolset for the game Entropia Universe. More projects will follow.</p>
+							  <a href="https://github.com/codeworkhackers" class="btn btn-dark">Open Github</a>
+							</div>
+						  </div>
+						  <div class="card text-center demon">
+							<div class="card-body">
+							  <h5 class="card-title">ft_printf</h5>
+							  <p class="card-text">Remake of C printf, stripped down.</p>
+							  <a href="https://github.com/nikander100/ft_printf" class="btn btn-dark">Open Github</a>
+							</div>
+						  </div>
+						  <div class="card text-center demon">
+							<div class="card-body">
+							  <h5 class="card-title">ft_server</h5>
+							  <p class="card-text">an auto bootstrapping dockerfile that sets up an nginx server with mysql(mariadb), phpmyadmin, wordpress preinstalled and preconfugred ready to use in a docker container running debian buster</p>
+							  <a href="https://github.com/nikander100/ft_server" class="btn btn-dark">Open Github</a>
+							</div>
+						  </div>
+					</div>
+				</div>
+			</main>
 		</div>
-		<div id="projects" class="container">
-			<div class="row justify-content-center">
-				<div class="card text-center demon">
-					<div class="card-body">
-					  <h5 class="card-title">CodeWorkHackers</h5>
-					  <p class="card-text">A small group of a few others and myself, currently working on a private and public tool/toolset for the game Entropia Universe. More projects will follow.</p>
-					  <a href="https://github.com/codeworkhackers" class="btn btn-dark">Open Github</a>
-					</div>
-				  </div>
-				  <div class="card text-center demon">
-					<div class="card-body">
-					  <h5 class="card-title">ft_printf</h5>
-					  <p class="card-text">Remake of C printf, stripped down.</p>
-					  <a href="https://github.com/nikander100/ft_printf" class="btn btn-dark">Open Github</a>
-					</div>
-				  </div>
-				  <div class="card text-center demon">
-					<div class="card-body">
-					  <h5 class="card-title">ft_server</h5>
-					  <p class="card-text">an auto bootstrapping dockerfile that sets up an nginx server with mysql(mariadb), phpmyadmin, wordpress preinstalled and preconfugred ready to use in a docker container running debian buster</p>
-					  <a href="https://github.com/nikander100/ft_server" class="btn btn-dark">Open Github</a>
-					</div>
-				  </div>
-			</div>
-		</div>
-		<footer>
-			Copyright &#169; 2020 Nikander van der Schee / nikander100
-		</footer>
+			<footer class="footer">
+				Copyright &#169; 2020 Nikander van der Schee / nikander100
+			</footer>
+	</div>
 	</body>
 </html>

@@ -1,25 +1,38 @@
-body {
-	margin: 0;
+html, body {
+  height: 100%;
   }
+
+body {
+  background-color: #a3a3a3;
+  display: block;
+}
+
+/* .page-container {
+} */
 
 nav {
 	list-style-type: none;
-	width: 25%;
+  width: max(125px, 12.5%);;
 	background-color:#a3a3a3;
 	padding: 0px;
 	height: 100%;
 	margin: 0;
 	overflow: auto;
-	position: fixed;
+  position: absolute;
 }
+
 nav img {
 	display: block;
 	margin: auto;
-	width: 200px;
+  width: 100%;
+  height: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
 	margin-bottom: 32px;
-	margin-top: 32px;
+	margin-top: 50px;
 	border-radius: 50%;
 }
+
 nav ul {
 	list-style-type: none;
 	margin: 0;
@@ -45,22 +58,45 @@ nav li a:hover:not(.active) {
 	color: #ffffff;
 }
 
-#introduction {
+/* .content-wrapper {
+} */
+
+.page-header {
   background-color: #a3a3a3;
   height: 50px;
-  text-align: right;
+  margin-left: max(125px, 12.5%);
+  width: auto;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.page-header h1 {
+  font-size: 36px;
+  height: 50px;
+}
+
+.content {
+  position: absolute;
+  width: min(100% - 125px, 100% - 12.5%);
+  height: calc(100% - 50px);
+  margin-left: max(125px, 12.5%);
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px 10px 0px 0px;
+  word-wrap: break-word;
 }
 
 @media (min-width: 600px) {
-	#introduction h1 {
-		color: #000000;
-    font-size: 32px;
-    overflow: hidden;
-    display: block;
+	.page-header h1 {
+    color: #000000;
+    
 	}
 }
 @media (max-width: 599px) {
-  #introduction h1 {
+  .page-header h1 {
     display: none;
 
   }
@@ -88,12 +124,20 @@ a, a:hover {
   color: red;
 }
 
-footer {
-  margin-bottom: 0px;
-  text-align: right;
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   font-size: 16px;
   font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  background-color: aqua;
 }
+
+/* footer {
+} */
 
 .alert {
   text-align: center;
@@ -102,7 +146,7 @@ footer {
 
 .card {
   margin: 5px;
-  margin-top: 10px;
+  margin-top: 0;
 }
 
 @media (max-width: 599px) {
@@ -131,5 +175,11 @@ footer {
   border: 1px solid black;
   padding: 10px;
 }
+
+#projects {
+  position: left;
+}
+
+
 
 /*# sourceMappingURL=styles.css.map */
