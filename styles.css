@@ -4,6 +4,7 @@ html, body {
 
 body {
   background-color: #a3a3a3;
+  display: block;
 }
 
 /* .page-container {
@@ -17,7 +18,7 @@ nav {
 	height: 100%;
 	margin: 0;
 	overflow: auto;
-  position: fixed;
+  position: absolute;
 }
 
 nav img {
@@ -78,11 +79,14 @@ nav li a:hover:not(.active) {
 }
 
 .content {
-  width: auto;
+  position: absolute;
+  width: min(100% - 125px, 100% - 12.5%);
+  height: calc(100% - 50px);
   margin-left: max(125px, 12.5%);
   padding: 20px;
   background-color: #ffffff;
   border-radius: 10px 10px 0px 0px;
+  word-wrap: break-word;
 }
 
 @media (min-width: 600px) {
@@ -142,7 +146,7 @@ a, a:hover {
 
 .card {
   margin: 5px;
-  margin-top: 10px;
+  margin-top: 0;
 }
 
 @media (max-width: 599px) {
@@ -170,6 +174,10 @@ a, a:hover {
   font-size: 1.2rem;
   border: 1px solid black;
   padding: 10px;
+}
+
+#projects {
+  position: left;
 }
 
 
