@@ -83,22 +83,38 @@ nav li a:hover:not(.active) {
   width: min(100% - 125px, 100% - 12.5%);
   height: calc(100% - 50px);
   margin-left: max(125px, 12.5%);
-  padding: 20px;
+  padding: 15px;
   background-color: #ffffff;
   border-radius: 10px 10px 0px 0px;
   word-wrap: break-word;
 }
 
-@media (min-width: 600px) {
+#social {
+  width: auto;
+  word-wrap: normal;
+}
+
+#social ul {
+  list-style-type: none;
+  max-width: 680px;
+}
+
+#social ul li div {
+  background-color: #ff0000;
+  width: inherit;
+  height: 60px;
+  border-radius: 100px;
+  margin: 20px;
+}
+
+@media (min-width: 755px) {
 	.page-header h1 {
     color: #000000;
-    
 	}
 }
-@media (max-width: 599px) {
+@media (max-width: 754px) {
   .page-header h1 {
     display: none;
-
   }
 }
 .container1 > h1:first-child {
@@ -132,8 +148,9 @@ a, a:hover {
   font-size: 16px;
   font-weight: bold;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   background-color: aqua;
+  max-height: 50px;
 }
 
 /* footer {
@@ -162,7 +179,7 @@ a, a:hover {
 }
 .demon {
   -webkit-box-shadow: 5px 5px 15px 5px #000000;
-  box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 0px 0px 20px 0px #242424;
 }
 
 #contact-info th {
