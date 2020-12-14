@@ -1,11 +1,11 @@
 const card = document.querySelector(".linkcard");
-const mainLink = document.querySelector(".mainlink");
+const mainLink = document.querySelector(".main-link");
 
-function cardClick(event) {
+function handleClick(event) {
 	const noTextSelected = !window.getSelection().toString();
 	if (noTextSelected) {	
 		mainLink.click();
 	}
 }
 
-card.addEventListener("click", cardClick);
+card.addEventListener("click", handleClick);
