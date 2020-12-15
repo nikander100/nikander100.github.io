@@ -91,7 +91,7 @@ nav li a:hover:not(.active) {
   word-wrap: normal;
   max-width: 680px;
   margin: 0 auto;
-  margin-top: calc(50% - 50px);
+  margin-top: max(50px, 10%);
 }
 
 #socials a, #socials h2 {
