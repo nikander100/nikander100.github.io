@@ -195,6 +195,9 @@ a, a:hover {
   margin-top: 0;
 }
 
+.clickable {
+}
+
 @media (max-width: 599px) {
   .card {
     margin-top: 5px;
