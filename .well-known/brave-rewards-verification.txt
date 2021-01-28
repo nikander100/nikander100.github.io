@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: nikander100.github.io
+Token: a364b50839f522df7b35a9e437e57bab80177814d895300178538575abf9b5c4
