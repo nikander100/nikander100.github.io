@@ -10,20 +10,3 @@ function handleButtons(linkto) {
 			window.open("https://www.codam.nl/", "_blank");
 	}
 }
-
-function handleNav(linkto) {
-	switch (linkto) {
-		case "index":
-			window.open("index.html", "_self");
-			break;
-		case "socials":
-			window.open("socials.html", "_self");
-			break;
-		case "portfolio":
-			window.open("portfolio.html", "_self");
-			break;
-		case "contact":
-			window.open("contact.html", "_self");
-			break;
-	}
-}
