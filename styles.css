@@ -47,7 +47,8 @@ nav li a {
 	display: block;
 	color: #000000;
 	padding: 8px;
-	text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 nav li a.active {
@@ -75,6 +76,16 @@ nav li a:hover:not(.active) {
 .page-header h1 {
   font-size: 36px;
   height: 50px;
+}
+
+.page-header a {
+  color: #FF0000;
+  cursor: pointer;
+}
+
+.page-header a:hover {
+  color: #ffffff;
+  transition: 0.3s;
 }
 
 .content_wrapper {
@@ -121,7 +132,6 @@ nav li a:hover:not(.active) {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  background-color: #ff0000;
   text-align: center;
   text-decoration: none;
   height: 60px;
@@ -131,8 +141,37 @@ nav li a:hover:not(.active) {
   outline: none;
   padding: 10px;
 }
+
+/* Button Styling */
+
+#Button_1{
+  background: url(/srcs/youtube_white.svg) no-repeat, #FF0000;
+  background-position-x: 35%;
+  background-position-y: 50%;
+  background-size: 50px;
+}
+
+#Button_2{
+  background: url(/srcs/github_white.svg) no-repeat, #555555;
+  background-position-x: 37%;
+  background-position-y: 50%;
+  background-size: 42px;
+}
+
+#Button_3{
+visibility: hidden;
+}
+
+#Button_4{
+  visibility: hidden;
+}
+
+#Button_5{
+  visibility: hidden;
+}
+
   
-#socials button:hover, #socials button:focus {
+#socials button:hover {
   color: white;
 }
 
@@ -186,10 +225,6 @@ a, a:hover {
 /* footer {
 } */
 
-.main-link{
-	color: #000000;
-}
-
 button{
   font-family: "PT Serif", serif;
 	cursor: pointer;
@@ -222,8 +257,8 @@ button:hover{
   }
 }
 .demon {
-  -webkit-box-shadow: 0px 0px 25px 0px #f1a9a9 inset, 0px 0px 5px 0px #242424;
-  box-shadow: 0px 0px 25px 0px #f1a9a9 inset, 0px 0px 5px 0px #242424;
+  -webkit-box-shadow: 0px 0px 5px 0px #1f1f1f;
+  box-shadow: 0px 0px 5px 0px #1f1f1f;
 }
 
 #contact-info th {

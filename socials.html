@@ -10,7 +10,10 @@
 		<!-- End Google Tag Manager -->
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+
 		<title>@nikander100 Socials</title>
+
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -33,10 +36,10 @@
 			<nav>
 				<ul>
 					<li><img src="me.jpg"></li>
-					<li><a href="index.html">Homepage</a></li>
-					<li><a class="active" href="socials.html">socials</a></li>
-					<li><a href="portfolio.html">Portfolio</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li><a onclick="handleNav('index')">Homepage</a></li>
+					<li><a class="active" onclick="handleNav('socials')">socials</a></li>
+					<li><a onclick="handleNav('portfolio')">Portfolio</a></li>
+					<li><a onclick="handleNav('contact')">Contact</a></li>
 				</ul>
 			</nav>
 			<div class="page-header">
@@ -47,7 +50,7 @@
 				</div>
 				<div>
 					<h1>
-						Student @ <a href="https://www.codam.nl/">Codam</a> Coding College
+						Student @ <a id="Button_GA4T" onclick="handleButtons('codam')">Codam</a> Coding College
 					</h1>
 				</div>
 			</div>
@@ -55,19 +58,19 @@
 				<div id="socials">
 					<ul>
 						<li>
-							<button onclick="handleButtons('codam')" id="Button 1" class="demon">this is a test button</button>
+							<button onclick="handleButtons('youtube')" id="Button_1" class="demon">Youtube</button>
 						</li>
 						<li>
-							<button onclick="handleButtons('github')" id="Button 2" class="demon">this is a test button</button>
+							<button onclick="handleButtons('github')" id="Button_2" class="demon">Github</button>
 						</li>
 						<li>
-							<button id="Button 3" class="demon">this is a test button</button>
+							<button id="Button_3" class="demon">this is a test button</button>
 						</li>
 						<li>
-							<button id="Button 4" class="demon">this is a test button</button>
+							<button id="Button_4" class="demon">this is a test button</button>
 						</li>
 						<li>
-							<button id="Button 5" class="demon">this is a test button for a website external max lengt</button>
+							<button id="Button_5" class="demon">this is a test button for a website external max lengt</button>
 						</li>
 					</ul>
 				</div>

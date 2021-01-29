@@ -10,7 +10,10 @@
 		<!-- End Google Tag Manager -->
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+
 		<title>Nikander's Portfolio</title>
+		
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -21,6 +24,7 @@
 
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<link rel ="stylesheet" href="styles.css">
+		<script src="myscripts.js"></script>
 	</head>
 	<body>
 		<!-- Google Tag Manager (noscript) -->
@@ -32,10 +36,10 @@
 			<nav>
 				<ul>
 					<li><img src="me.jpg"></li>
-					<li><a href="index.html">Homepage</a></li>
-					<li><a href="socials.html">socials</a></li>
-					<li><a class="active" href="portfolio.html">Portfolio</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li><a onclick="handleNav('index')">Homepage</a></li>
+					<li><a onclick="handleNav('socials')">socials</a></li>
+					<li><a class="active" onclick="handleNav('portfolio')">Portfolio</a></li>
+					<li><a onclick="handleNav('contact')">Contact</a></li>
 				</ul>
 			</nav>
 			<div class="page-header">
@@ -46,7 +50,7 @@
 				</div>
 				<div>
 					<h1>
-						Student @ <a href="https://www.codam.nl/">Codam</a> Coding College
+						Student @ <a id="Button_GA4T" onclick="handleButtons('codam')">Codam</a> Coding College
 					</h1>
 				</div>
 			</div>
