@@ -43,7 +43,7 @@ nav ul {
 	text-align: center;
 }
 
-nav li a {
+nav ul li a {
 	display: block;
 	color: #000000;
 	padding: 8px;
@@ -146,28 +146,44 @@ nav li a:hover:not(.active) {
 
 #Button_1{
   background: url(/srcs/youtube_white.svg) no-repeat, #FF0000;
-  background-position-x: 35%;
+  background-position-x: 36%;
   background-position-y: 50%;
-  background-size: 50px;
+  background-size: 40px;
 }
 
 #Button_2{
   background: url(/srcs/github_white.svg) no-repeat, #555555;
   background-position-x: 37%;
   background-position-y: 50%;
-  background-size: 42px;
+  background-size: 40px;
 }
 
 #Button_3{
-visibility: hidden;
+  background: url(/srcs/twitch_white.svg) no-repeat, #9146FF;
+  background-position-x: 38%;
+  background-position-y: 50%;
+  background-size: 34px;
 }
 
 #Button_4{
-  visibility: hidden;
+  background: url(/srcs/instagram_white.svg) no-repeat, #E1306C;
+  background-position-x: 35%;
+  background-position-y: 50%;
+  background-size: 34px;
 }
 
 #Button_5{
-  visibility: hidden;
+  background: url(/srcs/Discord-Logo-White.svg) no-repeat, #7289DA;
+  background-position-x: 37%;
+  background-position-y: 50%;
+  background-size: 50px;
+}
+
+#Button_6{
+  background: url(/srcs/reddit_white.svg) no-repeat, #FF4500;
+  background-position-x: 38%;
+  background-position-y: 50%;
+  background-size: 43px;
 }
 
   
