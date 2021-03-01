@@ -145,24 +145,24 @@ nav li a:hover:not(.active) {
 /* Button Styling */
 
 #Button_1{
+  background: url(/srcs/twitch_white.svg) no-repeat, #9146FF;
+  background-position-x: 38%;
+  background-position-y: 50%;
+  background-size: 34px;
+}
+
+#Button_2{
   background: url(/srcs/youtube_white.svg) no-repeat, #FF0000;
   background-position-x: 36%;
   background-position-y: 50%;
   background-size: 40px;
 }
 
-#Button_2{
+#Button_3{
   background: url(/srcs/github_white.svg) no-repeat, #555555;
   background-position-x: 37%;
   background-position-y: 50%;
   background-size: 40px;
-}
-
-#Button_3{
-  background: url(/srcs/twitch_white.svg) no-repeat, #9146FF;
-  background-position-x: 38%;
-  background-position-y: 50%;
-  background-size: 34px;
 }
 
 #Button_4{
@@ -181,6 +181,13 @@ nav li a:hover:not(.active) {
 
 #Button_6{
   background: url(/srcs/reddit_white.svg) no-repeat, #FF4500;
+  background-position-x: 38%;
+  background-position-y: 50%;
+  background-size: 43px;
+}
+
+#Button_7{
+  background: url(/srcs/ko-fi_black.svg) no-repeat, #29ABE0;
   background-position-x: 38%;
   background-position-y: 50%;
   background-size: 43px;
