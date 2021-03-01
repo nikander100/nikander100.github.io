@@ -19,6 +19,9 @@ function handleButtons(linkto) {
 			window.open("https://www.reddit.com/r/nikander100", "_blank");
 			break;
 		case "codam":
+			window.open("https://ko-fi.com/nikander100", "_blank");
+			break;
+		case "codam":
 			window.open("https://www.codam.nl/", "_blank");
 			break;
 	}
