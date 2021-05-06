@@ -5,6 +5,9 @@ html, body {
 body {
   background-color: #a3a3a3;
   display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .page-container {
@@ -14,22 +17,26 @@ body {
 
 nav {
 	list-style-type: none;
-  width: max(125px, 12.5%);;
+	width: max(125px, 12.5%);;
 	background-color:#a3a3a3;
 	padding: 0px;
+	padding-bottom: 44px;
 	height: 100%;
 	margin: 0;
 	overflow: auto;
-  position: absolute;
+	position: absolute;
+}
+nav::-webkit-scrollbar {
+	display: none;
 }
 
 nav img {
 	display: block;
 	margin: auto;
-  width: 100%;
-  height: 100%;
-  padding-left: 5%;
-  padding-right: 5%;
+	width: 100%;
+	height: 100%;
+	padding-left: 5%;
+	padding-right: 5%;
 	margin-bottom: 32px;
 	margin-top: 50px;
 	border-radius: 50%;
@@ -38,7 +45,7 @@ nav img {
 nav ul {
 	list-style-type: none;
 	margin: 0;
-  padding: 0;
+	padding: 0;
 	overflow: hidden;
 	text-align: center;
 }
@@ -47,8 +54,8 @@ nav ul li a {
 	display: block;
 	color: #000000;
 	padding: 8px;
-  text-decoration: none;
-  cursor: pointer;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 nav li a.active {
@@ -91,25 +98,38 @@ nav li a:hover:not(.active) {
 .content_wrapper {
   position: absolute;
   width: min(100% - 125px, 100% - 12.5%);
-  height: calc(100% - 50px);
+  height: calc(100% - 44px);
   margin-left: max(125px, 12.5%);
   padding: 15px;
+  padding-bottom: 50px;
   background-color: #ffffff;
   border-radius: 10px 10px 0px 0px;
   word-wrap: break-word;
+  overflow: scroll;
+}
+.content_wrapper::-webkit-scrollbar {
+	display: none;
+}
+.content_wrapper h1 {
+	text-align: center;
+}
+
+#bio {
+	text-align: center;
 }
 
 #socials {
   word-wrap: normal;
   max-width: 680px;
   margin: 0 auto;
-  margin-top: 85px; /* max(50px, 10%) */
+  margin-top: 5px;
 }
 
 #socials ul {
   list-style-type: none;
   padding: 0;
-  height: 700px;
+  margin: 0;
+  height: auto;
 }
 
 #socials li {
@@ -121,7 +141,7 @@ nav li a:hover:not(.active) {
 }
 
 #socials li:last-child {
-  padding-bottom: 60px;
+  margin-bottom: 5px;
 }
 
 #socials ul li button{
@@ -140,62 +160,6 @@ nav li a:hover:not(.active) {
   border-radius: 100px;
   outline: none;
   padding: 10px;
-}
-
-/* Button Styling */
-
-#Button_1{
-  background: url(/srcs/twitch_white.svg) no-repeat, #9146FF;
-  background-position-x: 38%;
-  background-position-y: 50%;
-  background-size: 34px;
-}
-
-#Button_2{
-  background: url(/srcs/youtube_white.svg) no-repeat, #FF0000;
-  background-position-x: 36%;
-  background-position-y: 50%;
-  background-size: 40px;
-}
-
-#Button_3{
-  background: url(/srcs/github_white.svg) no-repeat, #555555;
-  background-position-x: 37%;
-  background-position-y: 50%;
-  background-size: 40px;
-}
-
-#Button_4{
-  background: url(/srcs/instagram_white.svg) no-repeat, #E1306C;
-  background-position-x: 35%;
-  background-position-y: 50%;
-  background-size: 34px;
-}
-
-#Button_5{
-  background: url(/srcs/Discord-Logo-White.svg) no-repeat, #7289DA;
-  background-position-x: 37%;
-  background-position-y: 50%;
-  background-size: 50px;
-}
-
-#Button_6{
-  background: url(/srcs/reddit_white.svg) no-repeat, #FF4500;
-  background-position-x: 38%;
-  background-position-y: 50%;
-  background-size: 43px;
-}
-
-#Button_7{
-  background: url(/srcs/ko-fi_black.svg) no-repeat, #29ABE0;
-  background-position-x: 38%;
-  background-position-y: 50%;
-  background-size: 43px;
-}
-
-  
-#socials button:hover {
-  color: white;
 }
 
 @media (min-width: 755px) {
@@ -231,8 +195,8 @@ a, a:hover {
   color: red;
 }
 
-
 .footer {
+	display: unset;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -241,22 +205,12 @@ a, a:hover {
   font-weight: bold;
   text-align: center;
   padding: 10px;
-  background-color: aqua;
-  max-height: 50px;
+  background-color: rgba(0, 255, 255, 0.75);
+  height: 44px;
 }
 
 /* footer {
 } */
-
-button{
-  font-family: "PT Serif", serif;
-	cursor: pointer;
-  transition: 0.3s;
-}
-
-button:hover{
-  transform: translateY(-5px);
-}
 
 .alert {
   text-align: center;
@@ -299,7 +253,28 @@ button:hover{
   position: left;
 }
 
-/* main {
+#hobby {
+	margin: 0px;
+}
+
+#update {
+	text-align: center;
+	background-color: rgb(255, 0, 0, 0.75);
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	/*  to add this fixed above the footer
+	position: fixed;
+	bottom: 0px;
+	right: 0;
+	z-index: 1; */
+}
+
+
+/* border to see sizes */
+/* .content_wrapper {
 	border: solid 2px #000000
 } */
 
