@@ -1,0 +1,111 @@
+.bg-primary {
+  background-color: #AA00FF!important;
+}
+
+.bg-secondary {
+  background-color: #000000!important;
+}
+
+.copyright {
+  background-color: #000000;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link:hover {
+  color: #aa00ff;
+}
+
+.text-secondary {
+  color: #7c878e!important;
+}
+
+.btn-primary.focus, .btn-primary:focus, .btn-primary:hover {
+  color: #000;
+  background-color: rgb(126,0,189);
+  border-color: rgb(126,0,189);
+}
+
+.btn-primary {
+  background-color: #aa00ff;
+  border-color: #aa00ff;
+}
+
+.text-black {
+  color: #000!important;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link.active {
+  color: #aa00ff;
+}
+
+@media (min-width:992px) {
+  #mainNav .navbar-nav > li.nav-item > a.nav-link.active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
+    color: #fff;
+    background: #aa00ff;
+  }
+}
+
+.close:not(:disabled):not(.disabled):focus, .close:not(:disabled):not(.disabled):hover {
+  color: rgb(126,0,189);
+  opacity: 1;
+}
+
+.close {
+  color: #aa00ff;
+  font-size: 3rem;
+  opacity: 1;
+}
+
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #868e96;
+  --gray-dark: #343a40;
+  --primary: #aa00ff;
+  --secondary: #7c878e;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+
+a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-primary:hover {
+  background-color: rgb(126,0,189)!important;
+}
+
+a:active, a:focus, a:hover {
+  color: #aa00ff;
+}
+
+a:hover {
+  color: rgb(126,0,189);
+  text-decoration: underline;
+}
+
+a {
+  color: #aa00ff;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: rgb(126,0,189);
+  border-color: rgb(126,0,189);
+}
+

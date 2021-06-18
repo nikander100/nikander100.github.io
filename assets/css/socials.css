@@ -1,0 +1,40 @@
+hr.star-light:after {
+  color: #fff;
+  background-color: #aa00ff;
+}
+
+.socButtonContainer {
+  padding: 0px 75px;
+}
+
+.socButtonRow {
+  padding: 16px 0px;
+  max-width: 680px;
+}
+
+.socButtonCollum {
+  padding: 0px;
+}
+
+.socButton {
+  color: white;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border-radius: 100px;
+  outline: none;
+  height: 48px;
+  width: 100%;
+  font-size: 24px;
+}
+
+.socButtonIcon {
+  width: 32px;
+}
+
+@media (min-width: 992px) {
+  .socButtonContainer {
+    padding: 0px 10px;
+  }
+}
+

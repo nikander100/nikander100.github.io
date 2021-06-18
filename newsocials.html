@@ -20,62 +20,67 @@
     <link rel="stylesheet" href="assets/css/Footer-with-social-media-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/socials.css">
 </head>
 
-<body id="page-top">
+<body id="page-top" style="min-width: 400px;">
     <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-secondary text-uppercase" id="mainNav">
-        <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top">nikander100</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler text-white bg-primary navbar-toggler-right text-uppercase rounded" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+        <div class="container"><a class="navbar-brand js-scroll-trigger" href="index.html">nikander100</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler text-white bg-primary navbar-toggler-right text-uppercase rounded" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="newsocials.html">Socials</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.html">Home</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"></li>
+                    <li class="nav-item mx-0 mx-lg-1"></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" data-toggle="modal" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <header class="text-center text-white bg-primary masthead">
-        <div class="container" style="width: 256;"><img class="img-fluid d-block mx-auto tada animated mb-5" src="assets/img/Assets/logos/logoNew-cropped.png" style="max-height: 393px;">
-            <h1>Nikander<br>"nikander100"<br>&nbsp;van der Schee</h1>
+    <header class="text-center text-white bg-primary masthead" style="padding-top: 0px;"></header>
+    <section class="text-white bg-primary mb-0" id="socials" style="padding-bottom: 272px;">
+        <div class="container socButtonContainer" style="max-width: 680px;">
+            <h2 class="text-uppercase text-center text-white">My Socials</h2>
             <hr class="star-light mb-5">
-            <h2 class="font-weight-light mb-0">Fanatic Gamer - Software Engineering Student @ Codam - Web Developer</h2>
-        </div>
-    </header>
-    <section id="portfolio" class="portfolio">
-        <div class="container" data-toggle="tooltip" data-bss-tooltip="">
-            <h2 class="text-uppercase text-center text-secondary">Portfolio</h2>
-            <hr class="star-dark mb-5">
-            <div class="row">
-                <div class="col-md-6 col-lg-4"><a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-1">
-                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-                            <div class="text-center text-white my-auto portfolio-item-caption-content w-100 text-black"><i class="fa fa-search-plus fa-3x"></i></div>
-                        </div><img class="img-fluid align-items-xl-center" src="assets/img/portfolio/ft_printf.png">
-                    </a></div>
-                <div class="col-md-6 col-lg-4"><a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-2">
-                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-                            <div class="text-center text-white my-auto portfolio-item-caption-content w-100 text-black"><i class="fa fa-search-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="assets/img/portfolio/cub3d.png">
-                    </a></div>
+            <div class="row socButtonRow" style="padding-top: 0px;">
+                <div class="col-md-12 pulse animated infinite socButtonCollum"><button class="btn btn-primary socButton" data-bss-hover-animate="tada" id="button-1" type="button" style="box-shadow: 0px 0px 12px rgba(255,255,255,0.75);" onclick="handleButtons(&#39;twitch&#39;)"><i class="fab fa-twitch socButtonIcon"></i>Twitch</button></div>
+            </div>
+            <div class="row socButtonRow">
+                <div class="col-md-12 socButtonCollum"><button class="btn btn-primary socButton" data-bss-hover-animate="tada" id="button-2" type="button" style="box-shadow: 0px 0px 12px rgba(255,255,255,0.75);" onclick="handleButtons(&#39;youtube&#39;)"><i class="fab fa-youtube socButtonIcon"></i>Youtube</button></div>
+            </div>
+            <div class="row socButtonRow">
+                <div class="col-md-12 socButtonCollum"><button class="btn btn-primary socButton" data-bss-hover-animate="tada" id="button-3" type="button" style="box-shadow: 0px 0px 12px rgba(255,255,255,0.75);" onclick="handleButtons(&#39;github&#39;)"><i class="fab fa-github socButtonIcon"></i>Github</button></div>
+            </div>
+            <div class="row socButtonRow">
+                <div class="col-md-12 socButtonCollum"><button class="btn btn-primary socButton" data-bss-hover-animate="tada" id="button-4" type="button" style="box-shadow: 0px 0px 12px rgba(255,255,255,0.75);" onclick="handleButtons(&#39;instagram&#39;)"><i class="fab fa-instagram socButtonIcon"></i>Instagram</button></div>
+            </div>
+            <div class="row socButtonRow">
+                <div class="col-md-12 socButtonCollum"><button class="btn btn-primary socButton" data-bss-hover-animate="tada" id="button-5" type="button" style="box-shadow: 0px 0px 12px rgba(255,255,255,0.75);" onclick="handleButtons(&#39;discord&#39;)"><i class="fab fa-discord socButtonIcon"></i>Discord</button></div>
+            </div>
+            <div class="row socButtonRow">
+                <div class="col-md-12 socButtonCollum"><button class="btn btn-primary socButton" data-bss-hover-animate="tada" id="button-6" type="button" style="box-shadow: 0px 0px 12px rgba(255,255,255,0.75);" onclick="handleButtons(&#39;reddit&#39;)"><i class="fab fa-reddit-alien socButtonIcon"></i>Reddit</button></div>
+            </div>
+            <div class="row socButtonRow">
+                <div class="col-md-12 socButtonCollum"><button class="btn btn-primary socButton" data-bss-hover-animate="tada" id="button-7" type="button" style="box-shadow: 0px 0px 12px rgba(255,255,255,0.75);" onclick="handleButtons(&#39;ko-fi&#39;)"><i class="fas fa-coffee socButtonIcon"></i>Ko-Fi</button></div>
             </div>
         </div>
     </section>
-    <section class="text-white bg-primary mb-0" id="about">
-        <div class="container">
-            <h2 class="text-uppercase text-center text-white">About me</h2>
-            <hr class="star-light mb-5">
-            <div class="row">
-                <div class="col col-lg-4 ml-auto" style="text-align: center;padding-top: 20px;padding-bottom: 20px;border-bottom-width: 1px;border-bottom-style: solid;"><img data-aos="fade-right" data-aos-once="true" src="assets/img/Assets/meamsabout.jpg" style="width: 256px;height: 256px;box-shadow: 3px 2px 7px #eac0ff;"></div>
-                <div class="col-lg-4 ml-auto" style="padding-top: 20px;padding-bottom: 20px;border-bottom-width: 1px;border-bottom-style: solid;">
-                    <p class="lead">Hello my name is Nikander, I am 20 years of age (22 years of experience in coding).<br><br>I am a student @ Codam Coding College&nbsp; in Amsterdam.<br><br>My portfolio website and will slowly but surely change over the years as I learn more!<br></p>
-                </div>
-                <div class="col-lg-4 mr-auto" style="padding-top: 20px;padding-bottom: 20px;border-bottom-width: 1px;border-bottom-style: solid;">
-                    <p class="lead">I have a passion for gaming, motorcycles, tech and coding.&nbsp;<br><br>I like to share my passion for gaming with the people out there and try to stream when I can on my twitch!<br><br>I currently ride a 2005 Honda CBR 125R. It's quite a fun bike to ride, it is not the fastest but really agile and playfully!<br></p>
+    <div class="text-center text-white copyright py-4" id="footer">
+        <footer id="footerpad" style="padding: 0px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-8 mx-auto">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item"><a href="https://fb.gg/nikander100"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li>
+                            <li class="list-inline-item"><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
+                            <li class="list-inline-item"><a onclick="handleButtons(&#39;instagram&#39;)" href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-instagram fa-stack-1x fa-inverse"></i></span></a></li>
+                            <li class="list-inline-item"><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-pinterest fa-stack-1x fa-inverse"></i></span></a></li>
+                        </ul>
+                        <p class="copyright text-monospace">Copyright © Nikander "nikander100"&nbsp;van der Schee 2021<br>Web Design by nikander100</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </footer>
+    </div>
     <div class="d-lg-none scroll-to-top position-fixed rounded"><a class="text-center text-white d-block js-scroll-trigger rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
     <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-1">
         <div class="modal-dialog modal-lg" role="document">
@@ -212,23 +217,6 @@
                 <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" data-dismiss="modal"><i class="fa fa-close"></i>&nbsp;Close</a></div>
             </div>
         </div>
-    </div>
-    <div class="text-center text-white copyright py-4" id="footer">
-        <footer id="footerpad" style="padding: 0px;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-lg-8 mx-auto">
-                        <ul class="list-inline text-center">
-                            <li class="list-inline-item"><a href="https://fb.gg/nikander100"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li>
-                            <li class="list-inline-item"><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
-                            <li class="list-inline-item"><a onclick="handleButtons(&#39;instagram&#39;)" href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-instagram fa-stack-1x fa-inverse"></i></span></a></li>
-                            <li class="list-inline-item"><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-pinterest fa-stack-1x fa-inverse"></i></span></a></li>
-                        </ul>
-                        <p class="copyright text-monospace">Copyright © Nikander "nikander100"&nbsp;van der Schee 2021<br>Web Design by nikander100</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>

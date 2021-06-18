@@ -1,0 +1,32 @@
+header.masthead {
+  padding-top: calc(6rem + 35px);
+  padding-bottom: 6rem;
+}
+
+@media (min-width:992px) {
+  header.masthead {
+    padding-top: calc(6rem + 70px);
+    padding-bottom: 6rem;
+  }
+}
+
+hr.star-light:after {
+  color: #fff;
+  background-color: #aa00ff;
+}
+
+hr.star-dark:after {
+  color: #7c878e;
+  background-color: #fff;
+}
+
+hr.star-dark {
+  border-color: #7c878e;
+}
+
+.portfolio .portfolio-item .portfolio-item-caption {
+  transition: all .5s ease;
+  opacity: 0;
+  background-color: rgba(170,0,255,.9);
+}
+
