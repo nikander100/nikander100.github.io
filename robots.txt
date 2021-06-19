@@ -1,0 +1,6 @@
+User-agent: * 
+
+Disallow: /repo
+Noindex: /repo
+Disallow: /assets/*
+Sitemap: https://nikander100.tk/sitemap.xml
