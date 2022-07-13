@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: nikander100.tk
-Token: e86b5a3401935285486e6e66d6026956eca7dc38b83a8d2e583465c586d15913
