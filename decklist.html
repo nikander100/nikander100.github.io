@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Landing Page</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-family: Arial, sans-serif;
+			background: #525252d8;
+		}
+
+		.container {
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+		}
+
+		.image {
+			width: 800px;
+			box-shadow: 6px 5px 4px rgba(0, 0, 0, 0.7);
+			cursor: pointer;
+		}
+
+		.image img {
+			width: 100%;
+			height: auto;
+		}
+
+		.description {
+			display: none;
+			margin: 0;
+			text-align: left;
+			background: rgba(255, 255, 255, 0.425);
+			font-family: monospace;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="image">
+			<img src="https://cdn.discordapp.com/attachments/362183535488139265/1251304052894208055/image.png?ex=66701176&is=666ebff6&hm=6bba96e5763d88a1fc38fa806f11c4a8c87b1490ae5c42d6ec2d544c286b5f9e&" alt="Image 1">
+			<pre class="description">Pokémon: 5
+1 Radiant Hisuian Sneasler LOR 123
+3 Brute Bonnet PAR 123
+4 Roaring Moon ex PAR 124
+4 Roaring Moon TEF 109
+1 Squawkabilly ex PAL 169
+
+Trainer: 11
+2 Ultra Ball SVI 196
+2 Switch Cart ASR 154
+4 Dark Patch ASR 139
+4 Earthen Vessel PAR 163
+4 Explorer's Guidance TEF 147
+4 Trekking Shoes ASR 156
+3 PokéStop PGO 68
+4 Professor Sada's Vitality PAR 170
+4 Nest Ball SVI 181
+4 Ancient Booster Energy Capsule PAR 159
+2 Boss's Orders PAL 172
+
+Energy: 1
+10 Basic {D} Energy SVE 7
+
+Total Cards: 60</pre>
+		</div>
+		<div class="image">
+			<img src="https://cdn.discordapp.com/attachments/362183535488139265/1251304052894208055/image.png?ex=66701176&is=666ebff6&hm=6bba96e5763d88a1fc38fa806f11c4a8c87b1490ae5c42d6ec2d544c286b5f9e&" alt="Image 2">
+			<pre class="description">Pokémon: 5
+1 Radiant Hisuian Sneasler LOR 123
+3 Brute Bonnet PAR 123
+4 Roaring Moon ex PAR 124
+4 Roaring Moon TEF 109
+1 Squawkabilly ex PAL 169
+
+Trainer: 11
+2 Ultra Ball SVI 196
+2 Switch Cart ASR 154
+4 Dark Patch ASR 139
+4 Earthen Vessel PAR 163
+4 Explorer's Guidance TEF 147
+4 Trekking Shoes ASR 156
+3 PokéStop PGO 68
+4 Professor Sada's Vitality PAR 170
+4 Nest Ball SVI 181
+4 Ancient Booster Energy Capsule PAR 159
+2 Boss's Orders PAL 172
+
+Energy: 1
+10 Basic {D} Energy SVE 7
+
+Total Cards: 60</pre>
+		</div>
+		<div class="image">
+			<img src="https://cdn.discordapp.com/attachments/362183535488139265/1251304052894208055/image.png?ex=66701176&is=666ebff6&hm=6bba96e5763d88a1fc38fa806f11c4a8c87b1490ae5c42d6ec2d544c286b5f9e&" alt="Image 3">
+			<pre class="description">Pokémon: 5
+1 Radiant Hisuian Sneasler LOR 123
+3 Brute Bonnet PAR 123
+4 Roaring Moon ex PAR 124
+4 Roaring Moon TEF 109
+1 Squawkabilly ex PAL 169
+
+Trainer: 11
+2 Ultra Ball SVI 196
+2 Switch Cart ASR 154
+4 Dark Patch ASR 139
+4 Earthen Vessel PAR 163
+4 Explorer's Guidance TEF 147
+4 Trekking Shoes ASR 156
+3 PokéStop PGO 68
+4 Professor Sada's Vitality PAR 170
+4 Nest Ball SVI 181
+4 Ancient Booster Energy Capsule PAR 159
+2 Boss's Orders PAL 172
+
+Energy: 1
+10 Basic {D} Energy SVE 7
+
+Total Cards: 60</pre>
+		</div>
+	</div>
+
+	<script>
+		document.querySelectorAll('.image img').forEach(img => {
+			img.addEventListener('click', () => {
+				const description = img.nextElementSibling;
+				if (description.style.display === 'block') {
+					description.style.display = 'none';
+				} else {
+					description.style.display = 'block';
+				}
+			});
+		});
+	</script>
+</body>
+</html>
